@@ -4,9 +4,9 @@ section {
 }
 
 section h1 {
-    color:#606266;
+    color:#303133;
 }
 
-section p {
-    color:#909399;
+p, li, span {
+    color:#606266;
 }
