@@ -12,7 +12,7 @@
         <h1>elasticsearch是什么？</h1>
         <p>
             Elasticsearch 是一个开源的分布式 RESTful 搜索和分析引擎，能够解决越来越多不同的应用场景。
-            此外，还可以免费试用14天 阿里云 Elasticsearch 服务试用服务托管 Elasticsearch（和 Kibana）。
+            Elastic 的底层是开源库 Lucene，Elastic 是 Lucene 的封装。
         </p>
     </section>
     
@@ -35,6 +35,51 @@
 
         <h1>访问</h1>
         <img src="img/es_start.png" alt="">
+
+        <h1>客户端多种语言支持</h1>
+        <ul>
+            <li>Curl</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Perl</li>
+            <li>Ruby</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>基本概念</h1>
+
+        <h2>Node与Cluster</h2>
+        <p>
+            Elastic 本质上是一个分布式数据库，允许多台服务器协同工作，每台服务器可以运行多个 Elastic 实例。
+        </p>
+        <p>
+            单个 Elastic 实例称为一个节点（node）。一组节点构成一个集群（cluster）。
+        </p>
+
+        <h2>Index</h2>
+        <p>
+            Elastic 会索引所有字段，经过处理后写入一个反向索引（Inverted Index）。查找数据的时候，直接查找该索引。
+        </p>
+
+        <h2>Document</h2>
+        <p>
+            Index 里面单条的记录称为 Document（文档）。许多条 Document 构成了一个 Index。
+        </p>
+        <p>
+            Document 使用 JSON 格式表示，下面是一个例子。
+        </p>
+        <p>
+            <span>{</span><br>
+            &nbsp;&nbsp;&nbsp;<span>"user": "张三"</span><br>
+            &nbsp;&nbsp;&nbsp;<span>"title": "工程师"</span><br>
+            &nbsp;&nbsp;&nbsp;<span>"desc": "数据库管理"</span><br>
+            <span>}</span><br>
+        </p>
     </section>
 </body>
 </html>
